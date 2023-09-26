@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-custom
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/alroy-tenant/partner-catalog-custom/partner-catalog-custom@sha256:a2169b9dc31145b63e524a3d227aebd70f0a40ba1ec7de222937c07e214f9c8c
+        name: my-java-springboot
+        resources: {}
+status: {}
